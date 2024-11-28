@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About T-ajaz Supermarket</title>
+    <link rel="stylesheet" href="/TajazCss/style.css">
+    <script src="../Tajazjavascript/app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">T-ajaz Supermarket</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li ><a href="index.html#home" class="active-home">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login-btn" onclick="openModal('loginModal')">Login</button>
+                <button class="signup-btn" onclick="openModal('signupModal')">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    
+     <!-- MODEL FORM  -->
+    <!-- Login Modal -->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="form-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal" id="signupModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('signupModal')">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+            <div class="form-group">
+                <label for="signup-name">Full Name:</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+            </div>
+            <button type="submit" class="form-btn">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+    <main>
+        <section class="about-container">
+            <h1>About T-ajaz Supermarket</h1>
+            <p>Welcome to T-ajaz Supermarket, your one-stop shop for quality products.</p>
+    
+            <h2>Who We Are</h2>
+            <p>T-ajaz Supermarket is Nigeria's leading online supermarket and grocery delivery service. We offer a wide range of over 10,000 products, ensuring you can shop conveniently from the comfort of your home with same-day delivery services across Lagos and other locations in Nigeria.</p>
+    
+            <h2>Why Shop with Us?</h2>
+            <ul>
+                <li>Extensive range of products including groceries, toiletries, beverages, and household essentials.</li>
+                <li>Competitive prices and regular discounts on thousands of items.</li>
+                <li>Fast and reliable same-day delivery service to locations like Victoria Island, Surulere, Lekki, and more.</li>
+                <li>User-friendly website and app for seamless online shopping.</li>
+                <li>Customizable Christmas hampers and corporate gift options.</li>
+            </ul>
+    
+            <h2>Our Vision and Mission</h2>
+            <p>
+                <strong>Vision:</strong> To redefine grocery shopping by delivering affordability, convenience, and quality.<br>
+                <strong>Mission:</strong> To provide exceptional shopping experiences through innovative services and a customer-centric approach.
+            </p>
+    
+            <h2>Our History</h2>
+            <p>Founded with the vision to make quality products accessible to all, T-ajaz Supermarket continues to set the benchmark for online shopping in Nigeria.</p>
+    
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="../TajazImg/AhiaIcon.jpg" alt="Team Member 1">
+                <div class="team-member-info">
+                    <h4>AhiaPOS Inventory Software</h4>
+                    
+                    <p>AhiaPOS is an offline inventory Application that manages sales and stock reporting for groceries and essentials.  [07058273581]</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Privacy Section -->
+<section class="privacy-policy">
+    <h2>Privacy Policy</h2>
+    <p>
+        This Privacy Policy details the kind of information we collect from you, how we use it, and how we take steps to secure it. The confidentiality and security of the data we collect from you are a priority to us. It is important you read this Privacy Policy carefully to fully understand the terms under which you access and use the T-ajaz Supermarket website and other features and services.
+    </p>
+
+    <h3>Information We Collect</h3>
+    <p>
+        When registering for an account on the T-ajaz Supermarket website, we may collect some personally identifiable information, including but not limited to:
+    </p>
+    <ul>
+        <li>Name, age, and gender</li>
+        <li>Phone number and email address</li>
+        <li>Postal address</li>
+        <li>Debit/credit card details</li>
+    </ul>
+    <p>
+        Some of this information may be retained on our website for future reference and use, while others may only be visible to us during each transaction.
+    </p>
+
+    <h3>How We Use Information We Collect</h3>
+    <p>
+        T-ajaz Supermarket collects and uses your personal information to provide services as advertised on our website. This information may be used for:
+    </p>
+    <ul>
+        <li>Notifying you about the status of your order</li>
+        <li>Investigating and resolving complaints or problems</li>
+        <li>Assessing user interest in our products and services</li>
+        <li>Notifying you about promotions and offers</li>
+        <li>Customizing your shopping experience</li>
+        <li>Minimizing fraud and other criminal activity</li>
+    </ul>
+    <p>
+        At any point, you may request to stop receiving information from us. We will honor this request if it does not impact our ability to effectively fulfill your current and future orders.
+    </p>
+
+    <h3>Security of Information We Collect</h3>
+    <p>
+        T-ajaz Supermarket makes every attempt to secure your personal information from unauthorized access, use, or disclosure. Confidential information such as debit/credit card details are handled securely and protected through Secure Sockets Layer (SSL) encryption.
+    </p>
+
+    <h3>Cookies</h3>
+    <p>
+        A cookie is a piece of data sent from a website to a user’s computer while browsing that website. Cookies save certain information, such as postal addresses or phone numbers, ensuring previously submitted information does not need to be re-entered on future visits.
+    </p>
+    <p>
+        Users can accept or decline cookies. While most browsers accept cookies by default, you can update your preferences in your browser settings. Declining cookies may limit access to some features of the T-ajaz Supermarket website.
+    </p>
+</section>
+
+    </main>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-about">
+                <h3>About T-ajaz Supermarket</h3>
+                <p>Your go-to destination for quality products.</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><img src="../TajazImg/facebook.png"></a></li>
+                    <li><a href="#" target="_blank"><img src="../TajazImg/instagram.png"></a></li>
+                    <li><a href="#" target="_blank"><img src="../TajazImg/twitter.png"></a></li>
+                    <li><a href="#" target="_blank"><img src="../TajazImg/linkedin.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr>
+            <p>&copy; 2024 T-ajaz Supermarket. All rights reserved.</p>
+            <p>Web Design by AhiaSoft-Tech [07058273581]</p>
+        </div>
+    </footer>
+</body>
+</html>

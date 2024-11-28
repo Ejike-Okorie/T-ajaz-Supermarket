@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/TajazCss/style.css">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-pic"><img src="../TajazImg/logo.jpg" alt="T-ajaz Logo">
+                <h1 class="logo">T-ajaz Supermarket</h1>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li ><a href="index.html#home" class="active-home">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a onclick="openModal('contactusModal')" class="contact-us">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login-btn" onclick="openModal('loginModal')">Login</button>
+                <button class="signup-btn" onclick="openModal('signupModal')">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MODEL FORM  -->
+    <!-- Login Modal -->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="form-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal" id="signupModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('signupModal')">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+            <div class="form-group">
+                <label for="signup-name">Full Name:</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+            </div>
+            <button type="submit" class="form-btn">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<!-- CONTACT US -->
+   <!-- Contact Us Modal -->
+<div class="modal" id="contactusModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('contactusModal')">&times;</span>
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="contact-us">Email:</label>
+                <input type="email" id="contact-us placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Enter Message:</label>
+                <input type="text" id="contact-us placeholder="Enter your Message" required>
+            </div>
+            <button type="submit" class="form-btn">Send</button>
+        </form>
+    </div>
+</div>
+
+ <!-- ------------->
+
+    <!--  -->
+    <main>
+        <section class="hero">
+            <div class="hero-slider">
+                
+                <div class="slider-item">
+                  <img src="../TajazImg/shopping-cart-full-products-inside-supermarket-min-scaled.jpg" alt="Slider Image 1">
+                
+                </div>
+                <div class="slider-item">
+                  <img src="../TajazImg/Unforgetable_Deals (1).jpg" alt="Slider Image 2">
+                </div>
+                <div class="slider-item">
+                    <img src="../TajazImg/tajaz4.jpg" alt="Slider Image 2">
+                  </div>
+                <div class="slider-item">
+                  <img src="../TajazImg/spar-rewards-2.jpg" alt="Slider Image 3">
+                </div>
+               
+                
+
+              </div>
+                <button class="prev-btn">&#8592;</button>
+                <button class="next-btn">&#8594;</button>
+                <button class="shop-now">Shop Now</button>
+        </section>
+        <script src="../Tajazjavascript/app.js"></script>
+
+        <section class="products" id="products">
+            <div class="search-bar-container">
+                <h3 class="section-title">Featured Products</h3>
+                <div class="search-bar-wrapper">
+                    <select class="category-dropdown">
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="groceries">Groceries</option>
+                        <option value="toiletries">Toiletries</option>
+                        <option value="beverages">Beverages</option>
+                        <option value="household">Household Essentials</option>
+                        <option value="electronics">Electronics</option>
+                    </select>
+                    <input type="search" placeholder="Search products" class="search-bar">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+            
+            
+            <div class="product-grid">
+                <!-- Dynamic product cards can be generated here --------------------------->
+                <div class="product-card">
+                    <img src="../TajazImg/plasticcoker.jpg" alt="Product 1">
+                    <h4>Plastic Coke</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/CLASSIC-BREAD-e1722869701816.png" alt="Product 1">
+                    <h4>Hollandia Yoghurt</h4>
+                    <p># 200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/DETTOL-ANTI-BACTERIAL-COOL-SOAP-160G-e1722954880488.png" alt="Product 1">
+                    <h4>Ice Cream</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/FRISO-GOLD-RICE-BASED-MILK-CEREAL-300G-TIN-e1722844181721.png" alt="Product 1">
+                    <h4>Plastic Coke</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/HENNESSY-VERY-SPECIAL-COGNAC-70CL-e1722955871601.png" alt="Product 1">
+                    <h4>Hollandia Yoghurt</h4>
+                    <p># 200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/NIVEA-RADIANT-BEAUTY-ADVANCED-CARE-BODY-LOTION-400ML-e1722954979674.png" alt="Product 1">
+                    <h4>Ice Cream</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/DETTOL-ANTISEPTIC-DISINFECTANT-1LTR-e1722954829534.png" alt="Product 1">
+                    <h4>Plastic Coke</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/MOLFIX-2-MINI-3-6KG-964-FREE-e1722844354191.png" alt="Product 1">
+                    <h4>Hollandia Yoghurt</h4>
+                    <p># 200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/ORAL-B-PRO-HLTH-T-PASTE-E-FRESH-GEL-140G-130G-e1722954955960.png" alt="Product 1">
+                    <h4>Ice Cream</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/SMA-FOLLOW-ON-MILK-900G-e1722844803452.png" alt="Product 1">
+                    <h4>Plastic Coke</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/SUNLIGHT-SPRING-SENSATION-YELLOW-5X2Kg-1.8Kg-e1722954930595.png" alt="Product 1">
+                    <h4>Hollandia Yoghurt</h4>
+                    <p># 200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/5alive.jpg" alt="Product 1">
+                    <h4>Ice Cream</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/ayoala2.jpg" alt="Product 1">
+                    <h4>Plastic Coke</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/ayoola.jpeg" alt="Product 1">
+                    <h4>Hollandia Yoghurt</h4>
+                    <p># 200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/peakmilk.png" alt="Product 1">
+                    <h4>Ice Cream</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/threecrownmilk.jpg" alt="Product 1">
+                    <h4>Plastic Coke</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/evawater.jpg" alt="Product 1">
+                    <h4>Hollandia Yoghurt</h4>
+                    <p># 200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/fanta.png" alt="Product 1">
+                    <h4>Ice Cream</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/kingsoil.jpg" alt="Product 1">
+                    <h4>Plastic Coke</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/water2.jpg" alt="Product 1">
+                    <h4>Hollandia Yoghurt</h4>
+                    <p># 200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/evawater2.jpg" alt="Product 1">
+                    <h4>Ice Cream</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/canheneken.jpg" alt="Product 1">
+                    <h4>Plastic Coke</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/dubicmalt.jpg" alt="Product 1">
+                    <h4>Hollandia Yoghurt</h4>
+                    <p># 200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="../TajazImg/kingsoil.jpg" alt="Product 1">
+                    <h4>Kings Oil</h4>
+                    <p># 500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Repeat product cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- About Us Section -->
+            <div class="footer-about">
+                <h3>About T-ajaz Supermarket</h3>
+                <p>Your go-to destination for a wide range of quality products at unbeatable prices. We're here to make your shopping experience seamless and enjoyable.</p>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Stay updated with the latest deals and news from T-ajaz Supermarket.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><img src="../TajazImg/facebook.png"></a></li>
+                    <li><a href="#" target="_blank"><img src="../TajazImg/instagram.png"></a></li>
+                    <li><a href="#" target="_blank"><img src="../TajazImg/twitter.png"></a></li>
+                    <li><a href="#" target="_blank"><img src="../TajazImg/linkedin.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <hr>
+            <p>&copy; 2024 T-ajaz Supermarket. All rights reserved.</p>
+            <p>Web Design by AhiaSoft-Tech [07058273581]</p>
+        </div>
+    </footer>
+    
+     
+</body>
+</html>
